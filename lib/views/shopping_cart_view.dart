@@ -53,7 +53,7 @@ class ShoppingCartView extends StatelessWidget {
                     style: TextStyle(
                       fontWeight: FontWeight.w900,
                       fontFamily: 'Poppins',
-                      fontSize: 22.sp,
+                      fontSize: 20.sp,
                       color: Colors.white,
                     ),
                   ),
