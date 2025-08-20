@@ -13,14 +13,14 @@ class SlideButton extends StatefulWidget {
 class _SlideButtonState extends State<SlideButton> {
   double _position = 2.0; // current X position
   final double maxWidth = 220.w; // wider black container
-  final double buttonSize = 45.r; // bigger draggable button
+  final double buttonSize = 35.r; // bigger draggable button
 
   @override
   Widget build(BuildContext context) {
     // Calculate fade effect (0.0 = invisible, 1.0 = fully visible)
     double fade = 1.0 - (_position / (maxWidth - buttonSize));
 
-    final double containerHeight = 40.h; // taller container
+    final double containerHeight = 45.h; // taller container
 
     return Container(
       height: containerHeight,
@@ -81,8 +81,8 @@ class _SlideButtonState extends State<SlideButton> {
                 }
               },
               child: Container(
-                height: 25,
-                width: 25,
+                height: 45,
+                width: 45,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(6.r),
                   gradient: const LinearGradient(

@@ -27,8 +27,8 @@ class BikeCard extends StatelessWidget {
 
         // Example RichText over it
         Positioned(
-          top: -2.h,
-          left: 118.w,
+          top: -1.h,
+          left: 128.w,
           child: Obx(() {
             return IconButton(
               onPressed: () {
@@ -44,7 +44,7 @@ class BikeCard extends StatelessWidget {
                       child: Icon(
                         Icons.favorite_border_outlined,
                         color: Colors.white,
-                        size: 30.r,
+                        size: 24.r,
                       ),
                     )
                   : Icon(
@@ -67,15 +67,15 @@ class BikeCard extends StatelessWidget {
 
         // text
         Positioned(
-          top: 145.h,
-          left: 33.w,
+          top: 148.h,
+          left: 36.w,
           child: RichText(
             text: TextSpan(
               children: [
                 TextSpan(
                   text: item.item,
                   style: TextStyle(
-                    fontSize: 13.5.sp,
+                    fontSize: 12.5.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w500,
                     color: Colors.white.withOpacity(0.5),
@@ -84,7 +84,7 @@ class BikeCard extends StatelessWidget {
                 TextSpan(
                   text: item.name,
                   style: TextStyle(
-                    fontSize: 15.sp,
+                    fontSize: 14.sp,
 
                     color: Colors.white,
                     fontFamily: 'Poppins',
@@ -94,7 +94,7 @@ class BikeCard extends StatelessWidget {
                 TextSpan(
                   text: item.price,
                   style: TextStyle(
-                    fontSize: 13.5.sp,
+                    fontSize: 12.5.sp,
                     fontFamily: 'Poppins',
                     fontWeight: FontWeight.w500,
                     color: Colors.white.withOpacity(0.5),

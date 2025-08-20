@@ -72,6 +72,7 @@ class _ShoppingCartCouponState extends State<ShoppingCartCoupon> {
                     ),
                   ),
                 ),
+                SizedBox(height: 20.h),
                 GestureDetector(
                   onTap: _applyCoupon,
                   child: Container(
@@ -102,7 +103,7 @@ class _ShoppingCartCouponState extends State<ShoppingCartCoupon> {
             ),
           ),
         ),
-        SizedBox(height: 20.h),
+        SizedBox(height: 25.h),
 
         // If valid → show details, else → drag button only
         if (_showDetails) ...[
@@ -114,7 +115,7 @@ class _ShoppingCartCouponState extends State<ShoppingCartCoupon> {
               fontFamily: 'PoppinL',
             ),
           ),
-          SizedBox(height: 10.h),
+          SizedBox(height: 20.h),
           Column(
             children: [
               PriceDetailRow(detail: 'Subtotal:', price: '\$6119.99'),

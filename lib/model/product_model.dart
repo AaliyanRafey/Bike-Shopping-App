@@ -20,6 +20,6 @@ final List<ProductModel> product = [
   ProductModel(
     image: 'assets/images/h.png',
     name: 'SMITH - Trade',
-    price: '\$120',
+    price: '\$120      ',
   ),
 ];
